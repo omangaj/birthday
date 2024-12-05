@@ -15,6 +15,7 @@
             background: linear-gradient(to bottom, #ffddcc, #ff99cc);
             font-family: 'Arial', sans-serif;
             overflow: hidden;
+            position: relative;
         }
 
         .container {
@@ -29,7 +30,7 @@
             font-size: 3rem;
             color: darkblue;
             animation: glow 1s ease-in-out infinite alternate;
-            margin-bottom: 80px;
+            margin-bottom: 120px;
         }
 
         @keyframes glow {
@@ -47,7 +48,7 @@
             margin-bottom: 20px;
         }
 
-        .bottom-layer, .top-layer, .middle-layer {
+        .bottom-layer, .middle-layer, .top-layer {
             height: 80px;
             width: 240px;
             position: relative;
@@ -212,6 +213,18 @@
                 margin-top: 15px;
             }
         }
+
+        /* Watermark Style */
+        .watermark {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-size: 3rem;
+            color: rgba(207, 127, 179, 0.2);
+            font-family: 'Arial', sans-serif;
+            transform: rotate(-45deg);
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
@@ -225,5 +238,7 @@
         </div>
         <p class="message">Wishing you a day filled with joy and celebration! Happy birthday Ashlesha!</p>
     </div>
+    <!-- Watermark added here -->
+    <div class="watermark">राधा</div>
 </body>
 </html>
